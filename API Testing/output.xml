@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 21:12:46.340" rpa="false" schemaversion="3">
+<suite id="s1" name="TC1 GET Request" source="C:\Users\ravi\PycharmProjects\ravi\API Testing\TC1_GET_Request.robot">
+<test id="s1-t1" name="Get_BookInfo" line="8">
+<kw name="create session">
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<msg timestamp="20220823 21:12:46.596" level="FAIL">No keyword with name 'create session' found.</msg>
+<status status="FAIL" starttime="20220823 21:12:46.596" endtime="20220823 21:12:46.611"/>
+</kw>
+<kw name="$response = get reqest mysession /books/${book}">
+<status status="NOT RUN" starttime="20220823 21:12:46.611" endtime="20220823 21:12:46.611"/>
+</kw>
+<status status="FAIL" starttime="20220823 21:12:46.596" endtime="20220823 21:12:46.611">No keyword with name 'create session' found.</status>
+</test>
+<status status="FAIL" starttime="20220823 21:12:46.381" endtime="20220823 21:12:46.627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC1 GET Request">TC1 GET Request</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220823 21:12:46.260" level="ERROR">Error in file 'C:\Users\ravi\PycharmProjects\ravi\API Testing\TC1_GET_Request.robot' on line 2: Non-existing setting 'Library RequestsLibrary'.</msg>
+<msg timestamp="20220823 21:12:46.381" level="ERROR">Error in file 'C:\Users\ravi\PycharmProjects\ravi\API Testing\TC1_GET_Request.robot' on line 5: Setting variable '${base_url} https://demoqa.com' failed: Invalid variable name '${base_url} https://demoqa.com'.</msg>
+<msg timestamp="20220823 21:12:46.391" level="ERROR">Error in file 'C:\Users\ravi\PycharmProjects\ravi\API Testing\TC1_GET_Request.robot' on line 6: Setting variable '${book} 9781449325862' failed: Invalid variable name '${book} 9781449325862'.</msg>
+</errors>
+</robot>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220824 18:30:13.725" rpa="false" schemaversion="3">
+<suite id="s1" name="TC1 GET Request" source="C:\Users\ravi\PycharmProjects\ravi\tests\TC1_GET_Request.robot">
+<test id="s1-t1" name="Get_BookInfo" line="12">
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>http://google.com</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220824 18:30:14.745" level="INFO">GET Request : url=http://google.com/ (redirected) 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220824 18:30:14.745" level="INFO">GET Response : url=http://www.google.com/ 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 24 Aug 2022 22:30:13 GMT', 'Expires': '-1', 'Cache-Control': 'private, max-age=0', 'Content-Type': 'text/html; charset=ISO-8859-1', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Content-Encoding': 'gzip', 'Server': 'gws', 'Content-Length': '6223', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': '1P_JAR=2022-08-24-22; expires=Fri, 23-Sep-2022 22:30:13 GMT; path=/; domain=.google.com; Secure, AEC=AakniGPlShImyZNNCQsidKOv0jGVG2p2dZZRUHnE1mEDSWRah_zdqPt2KLo; expires=Mon, 20-Feb-2023 22:30:13 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=511=WBqfIVouLQ_L0M2sPJX3xKmBDwwJ3J_o39jLtUCAEVYX1pIr34MV6s9K1K2BAHqMshqMxc2v02-OwUQ_YrRViujK9qZZW4Z9V63rHGLgMKkvDYhPUXxHRnsDek_yZIWF_8uRZ7z8Nke9O6Xj9oOhENXTS4lyyWOPDA-UVK4VYks; expires=Thu, 23-Feb-2023 22:30:13 GMT; path=/; domain=.google.com; HttpOnly'} 
+ body=&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="en"&gt;&lt;head&gt;&lt;meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"&gt;&lt;meta content="noodp" name="robots"&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="g7ZtWdC-SLgcL-Oynw8-zg"&gt;(function(){window.google={kEI:'daYGY5CwJeXv2roPoKqO4AY',kEXPI:'0,1302536,56873,6058,207,4804,2316,383,246,5,5367,1123753,1197718,683,380089,16115,19398,9286,17572,4859,1361,9291,3027,4747,12834,4998,13228,1837,2010,10622,22741,1832,1023,3819,1279,2742,149,1103,840,1983,4314,4120,2023,1777,520,14670,3227,2845,7,24989,8229,552,17175,432,3,346,1244,1,5444,149,11323,2652,4,1528,2304,7039,20309,1714,3050,2658,7356,932,1,12726,2980,16808,1435,5806,2551,4094,4052,3,3541,1,11942,30212,2,14022,2373,342,11401,11623,5679,1021,2380,28741,4568,6259,23418,1249,5838,14968,4332,2204,2083,3197,445,2,2,1,23827,2727,8233,6582,739,60,2,3,14675,1290,873,9625,173,9834,8,1922,9779,23,12392,6715,4590,702,6899,1745,251,1377,1460,5764,190,160,857,4630,3879,484,68,983,123,700,4,1,2,2,2,2,1638,5453,1,761,548,1321,4194,1208,674,1162,3487,497,2278,1082,889,1889,713,994,14,82,5,647,2,76,369,325,107,344,2099,43,134,490,82,1986,1468,2,3,2509,2,4,525,834,759,507,172,709,227,87,560,501,936,675,15,1904,600,157,20,1,4,1,323,170,1,294,584,40,619,244,511,1,167,266,886,5,171,103,275,534,73,267,754,5360792,577,79,8799365,3311,141,795,19735,1,1,346,20730464,3220020,4042143,1964,3094,9173,4406,3405,8364,62,4,471,16,1376428,57087',kBL:'mJYd'};google.sn='webhp';google.kHL='en';})();(function(){
+var f=this||self;var h,k=[];function l(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||h}function m(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b}
+function n(a,b,c,d,g){var e="";c||-1!==b.search("&amp;ei=")||(e="&amp;ei="+l(d),-1===b.search("&amp;lei=")&amp;&amp;(d=m(d))&amp;&amp;(e+="&amp;lei="+d));d="";!c&amp;&amp;f._cshid&amp;&amp;-1===b.search("&amp;cshid=")&amp;&amp;"slh"!==a&amp;&amp;(d="&amp;cshid="+f._cshid);c=c||"/"+(g||"gen_204")+"?atyp=i&amp;ct="+a+"&amp;cad="+b+e+"&amp;zx="+Date.now()+d;/^http:/i.test(c)&amp;&amp;"https:"===window.location.protocol&amp;&amp;(google.ml&amp;&amp;google.ml(Error("a"),!1,{src:c,glmm:1}),c="");return c};h=google.kEI;google.getEI=l;google.getLEI=m;google.ml=function(){return null};google.log=function(a,b,c,d,g){if(c=n(a,b,c,d,g)){a=new Image;var e=k.length;k[e]=a;a.onerror=a.onload=a.onabort=function(){delete k[e]};a.src=c}};google.logUrl=n;}).call(this);(function(){
+google.y={};google.sy=[];google.x=function(a,b){if(a)var c=a.id;else{do c=Math.random();while(google.y[c])}google.y[c]=[a,b];return!1};google.sx=function(a){google.sy.push(a)};google.lm=[];google.plm=function(a){google.lm.push.apply(google.lm,a)};google.lq=[];google.load=function(a,b,c){google.lq.push([[a],b,c])};google.loadAll=function(a,b){google.lq.push([a,b])};google.bx=!1;google.lx=function(){};}).call(this);google.f={};(function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a="1"===c||"q"===c&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if("A"===a.tagName){a="1"===a.getAttribute("data-nohref");break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1558d6}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#000}a{color:#4b11a8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1558d6}a:visited{color:#4b11a8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#f8f9fa;border:solid 1px;border-color:#dadce0 #70757a #70757a #dadce0;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;border:none;color:#000;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}&lt;/style&gt;&lt;script nonce="g7ZtWdC-SLgcL-Oynw8-zg"&gt;(function(){window.google.erd={jsr:1,bv:1638,de:true};
+var h=this||self;var k,l=null!=(k=h.mei)?k:1,n,p=null!=(n=h.sdo)?n:!0,q=0,r,t=google.erd,v=t.jsr;google.ml=function(a,b,d,m,e){e=void 0===e?2:e;b&amp;&amp;(r=a&amp;&amp;a.message);if(google.dl)return google.dl(a,e,d),null;if(0&gt;v){window.console&amp;&amp;console.error(a,d);if(-2===v)throw a;b=!1}else b=!a||!a.message||"Error loading script"===a.message||q&gt;=l&amp;&amp;!m?!1:!0;if(!b)return null;q++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&amp;ei="+b(google.kEI);google.kEXPI&amp;&amp;(c+="&amp;jexpid="+b(google.kEXPI));c+="&amp;srcpg="+b(google.sn)+"&amp;jsr="+b(t.jsr)+"&amp;bver="+b(t.bv);var f=a.lineNumber;void 0!==f&amp;&amp;(c+="&amp;line="+f);var g=
+a.fileName;g&amp;&amp;(0&lt;g.indexOf("-extension:/")&amp;&amp;(e=3),c+="&amp;script="+b(g),f&amp;&amp;g===window.location.href&amp;&amp;(f=document.documentElement.outerHTML.split("\n")[f],c+="&amp;cad="+b(f?f.substring(0,300):"No script found.")));c+="&amp;jsel="+e;for(var u in d)c+="&amp;",c+=b(u),c+="=",c+=b(d[u]);c=c+"&amp;emsg="+b(a.name+": "+a.message);c=c+"&amp;jsst="+b(a.stack||"N/A");12288&lt;=c.length&amp;&amp;(c=c.substr(0,12288));a=c;m||google.log(0,"",a);return a};window.onerror=function(a,b,d,m,e){r!==a&amp;&amp;(a=e instanceof Error?e:Error(a),void 0===d||"lineNumber"in a||(a.lineNumber=d),void 0===b||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,"SyntaxError"===a.name||"SyntaxError"===a.message.substring(0,11)||0&lt;a.message.indexOf("Script error")?2:0));r=null;p&amp;&amp;q&gt;=l&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor="#fff"&gt;&lt;script nonce="g7ZtWdC-SLgcL-Oynw8-zg"&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}
+}
+})();&lt;/script&gt;&lt;div id="mngb"&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Search&lt;/b&gt; &lt;a class=gb1 href="http://www.google.com/imghp?hl=en&amp;tab=wi"&gt;Images&lt;/a&gt; &lt;a class=gb1 href="http://maps.google.com/maps?hl=en&amp;tab=wl"&gt;Maps&lt;/a&gt; &lt;a class=gb1 href="https://play.google.com/?hl=en&amp;tab=w8"&gt;Play&lt;/a&gt; &lt;a class=gb1 href="https://www.youtube.com/?tab=w1"&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href="https://news.google.com/?tab=wn"&gt;News&lt;/a&gt; &lt;a class=gb1 href="https://mail.google.com/mail/?tab=wm"&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href="https://drive.google.com/?tab=wo"&gt;Drive&lt;/a&gt; &lt;a class=gb1 style="text-decoration:none" href="https://www.google.com/intl/en/about/products?tab=wh"&gt;&lt;u&gt;More&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href="http://www.google.com/history/optout?hl=en" class=gb4&gt;Web History&lt;/a&gt; | &lt;a  href="/preferences?hl=en" class=gb4&gt;Settings&lt;/a&gt; | &lt;a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=http://www.google.com/&amp;ec=GAZAAQ" class=gb4&gt;Sign in&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear="all" id="lgpd"&gt;&lt;div id="lga"&gt;&lt;img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png" style="padding:28px 0 14px" width="272" id="hplogo"&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action="/search" name="f"&gt;&lt;table cellpadding="0" cellspacing="0"&gt;&lt;tr valign="top"&gt;&lt;td width="25%"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="center" nowrap=""&gt;&lt;input name="ie" value="ISO-8859-1" type="hidden"&gt;&lt;input value="en" name="hl" type="hidden"&gt;&lt;input name="source" type="hidden" value="hp"&gt;&lt;input name="biw" type="hidden"&gt;&lt;input name="bih" type="hidden"&gt;&lt;div class="ds" style="height:32px;margin:4px 0"&gt;&lt;input class="lst" style="margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#000" autocomplete="off" value="" title="Google Search" maxlength="2048" name="q" size="57"&gt;&lt;/div&gt;&lt;br style="line-height:0"&gt;&lt;span class="ds"&gt;&lt;span class="lsbb"&gt;&lt;input class="lsb" value="Google Search" name="btnG" type="submit"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="ds"&gt;&lt;span class="lsbb"&gt;&lt;input class="lsb" id="tsuid1" value="I'm Feeling Lucky" name="btnI" type="submit"&gt;&lt;script nonce="g7ZtWdC-SLgcL-Oynw8-zg"&gt;(function(){var id='tsuid1';document.getElementById(id).onclick = function(){if (this.form.q.value){this.checked = 1;if (this.form.iflsig)this.form.iflsig.disabled = false;}
+else top.location='/doodles/';};})();&lt;/script&gt;&lt;input value="AJiK0e8AAAAAYwa0hWIFrJDsHqZ4wyrQAf0ONgr_7S1r" name="iflsig" type="hidden"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class="fl sblc" align="left" nowrap="" width="25%"&gt;&lt;a href="/advanced_search?hl=en&amp;amp;authuser=0"&gt;Advanced search&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;input id="gbv" name="gbv" type="hidden" value="1"&gt;&lt;script nonce="g7ZtWdC-SLgcL-Oynw8-zg"&gt;(function(){
+var a,b="1";if(document&amp;&amp;document.getElementById)if("undefined"!=typeof XMLHttpRequest)b="2";else if("undefined"!=typeof ActiveXObject){var c,d,e=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220824 18:30:14.745" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220824 18:30:13.926" endtime="20220824 18:30:14.745"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220824 18:30:14.760" endtime="20220824 18:30:14.760"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220824 18:30:14.760" endtime="20220824 18:30:14.776"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220824 18:30:14.776" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20220824 18:30:14.776" endtime="20220824 18:30:14.776"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220824 18:30:14.776" endtime="20220824 18:30:14.776"/>
+</kw>
+<status status="PASS" starttime="20220824 18:30:13.926" endtime="20220824 18:30:14.776"/>
+</test>
+<test id="s1-t2" name="XMLLibrary" line="22">
+<kw name="Parse Xml" library="XML">
+<var>${xml_obj}</var>
+<arg>C:/employee.xml</arg>
+<doc>Parses the given XML file or string into an element structure.</doc>
+<msg timestamp="20220824 18:30:14.792" level="INFO">${xml_obj} = &lt;Element 'root' at 0x00000154523C6700&gt;</msg>
+<status status="PASS" starttime="20220824 18:30:14.776" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Get Element Text" library="XML">
+<var>${emp_name}</var>
+<arg>${xml_obj}</arg>
+<arg>.//row[1]/name</arg>
+<doc>Returns all text of the element, possibly whitespace normalized.</doc>
+<msg timestamp="20220824 18:30:14.792" level="INFO">${emp_name} = manoj</msg>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${emp_name}</arg>
+<arg>manoj</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Get Element" library="XML">
+<var>${emp_name}</var>
+<arg>${xml_obj}</arg>
+<arg>.//row[1]/name</arg>
+<doc>Returns an element in the ``source`` matching the ``xpath``.</doc>
+<msg timestamp="20220824 18:30:14.792" level="INFO">${emp_name} = &lt;Element 'name' at 0x00000154523C67F0&gt;</msg>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${emp_name.text}</arg>
+<arg>manoj</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Element Text Should Be" library="XML">
+<arg>${xml_obj}</arg>
+<arg>manoj</arg>
+<arg>.//row[1]/name</arg>
+<doc>Verifies that the text of the specified element is ``expected``.</doc>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Get Element Count" library="XML">
+<var>${count}</var>
+<arg>${xml_obj}</arg>
+<arg>.//row</arg>
+<doc>Returns and logs how many elements the given ``xpath`` matches.</doc>
+<msg timestamp="20220824 18:30:14.792" level="INFO">55 elements matched './/row'.</msg>
+<msg timestamp="20220824 18:30:14.792" level="INFO">${count} = 55</msg>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220824 18:30:14.792" endtime="20220824 18:30:14.792"/>
+</kw>
+<status status="PASS" starttime="20220824 18:30:14.776" endtime="20220824 18:30:14.792"/>
+</test>
+<status status="PASS" starttime="20220824 18:30:13.725" endtime="20220824 18:30:14.807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC1 GET Request">TC1 GET Request</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220824 18:30:13.919" level="ERROR">Error in file 'C:\Users\ravi\PycharmProjects\ravi\tests\TC1_GET_Request.robot' on line 5: Importing library 'OS' failed: ModuleNotFoundError: No module named 'OS'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\ravi\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\ravi\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\ravi\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\ravi\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\ravi\AppData\Local\Programs\Python\Python310
+  C:\Users\ravi\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
+</errors>
+</robot>
